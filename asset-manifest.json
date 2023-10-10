@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/mendeleev_table/static/css/main.3f13e0d1.css",
+    "main.js": "/mendeleev_table/static/js/main.f3cc5829.js",
+    "static/media/TildaSans-VF.ttf": "/mendeleev_table/static/media/TildaSans-VF.22b8b72db2ebdc82a72b.ttf",
+    "static/media/icon.svg": "/mendeleev_table/static/media/icon.9e9165ad72ed475a6d0c19397ec18c7c.svg",
+    "index.html": "/mendeleev_table/index.html",
+    "main.3f13e0d1.css.map": "/mendeleev_table/static/css/main.3f13e0d1.css.map",
+    "main.f3cc5829.js.map": "/mendeleev_table/static/js/main.f3cc5829.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3f13e0d1.css",
+    "static/js/main.f3cc5829.js"
+  ]
+}
