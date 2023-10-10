@@ -1,0 +1,86 @@
+.headBlock {
+    width: 100%;
+    padding: 0 30px 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+%headText {
+    margin-left: 40px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.leftHeadBlock {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        @extend %headText;
+        margin-top: 15px;
+        text-transform: uppercase;
+    }
+}
+
+%abbreviation {
+    font-size: 170px;
+    font-weight: 900;
+    line-height: 85%;
+}
+
+.abbreviation_one {
+    @extend %abbreviation;
+    margin-left: 27px;
+}
+
+.abbreviation_many {
+    @extend %abbreviation;
+}
+
+.translate_name {
+    @extend %headText;
+    font-weight: 500;
+}
+
+.atomic_mass {
+    @extend %headText;
+}
+
+.rightHeadBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+
+    svg {
+        width: 80px;
+        height: 80px;
+        flex-shrink: 0;
+    }
+
+    p {
+        color: #fff;
+        font-size: 40px;
+        font-weight: 700;
+    }
+}
+
+.infoBlock {
+    width: 100%;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    p {
+        margin: -5px 0 0 10px;
+        font-size: 18px;
+    }
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
