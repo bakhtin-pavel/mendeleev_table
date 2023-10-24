@@ -3,12 +3,21 @@
     padding: 0 30px 20px 0;
     display: flex;
     justify-content: space-between;
+
+    @media (min-width: 768px) {
+        padding: 0 70px 30px 0;
+    }
 }
 
 %headText {
     margin-left: 40px;
     font-size: 20px;
     font-weight: 700;
+
+    @media (min-width: 768px) {
+        margin-left: 100px;
+        font-size: 40px;
+    }
 }
 
 .leftHeadBlock {
@@ -19,6 +28,10 @@
         @extend %headText;
         margin-top: 15px;
         text-transform: uppercase;
+
+        @media (min-width: 768px) {
+            margin-top: 40px;
+        }
     }
 }
 
@@ -26,11 +39,19 @@
     font-size: 170px;
     font-weight: 900;
     line-height: 85%;
+
+    @media (min-width: 768px) {
+        font-size: 370px;
+    }
 }
 
 .abbreviation_one {
     @extend %abbreviation;
     margin-left: 27px;
+
+    @media (min-width: 768px) {
+        margin-left: 68px;
+    }
 }
 
 .abbreviation_many {
@@ -57,12 +78,43 @@
         width: 80px;
         height: 80px;
         flex-shrink: 0;
+
+        g {
+            g {
+                path {
+                    fill: transparent;
+                    animation: draw 7s linear;
+                }
+
+                @keyframes draw {
+                    0% {
+                        stroke-dasharray: 500;
+                        stroke-dashoffset: 500;
+                    }
+
+                    100% {
+                        stroke-dashoffset: 0;
+                    }
+                }
+            }
+        }
     }
 
     p {
         color: #fff;
         font-size: 40px;
         font-weight: 700;
+    }
+
+    @media (min-width: 768px) {
+        svg {
+            width: 165px;
+            height: 165px;
+        }
+
+        p {
+            font-size: 80px;
+        }
     }
 }
 
@@ -75,12 +127,27 @@
     gap: 15px;
 
     p {
-        margin: -5px 0 0 10px;
+        margin: 0px 0 0 10px;
         font-size: 18px;
+        white-space: pre-line;
+    }
+
+    @media (min-width: 768px) {
+        padding: 40px 70px 70px 75px;
+        gap: 25px;
+
+        p {
+            margin: 0px 0 0 25px;
+            font-size: 22px;
+        }
     }
 }
 
 h3 {
     font-size: 18px;
     font-weight: 700;
+
+    @media (min-width: 768px) {
+        font-size: 22px;
+    }
 }
